@@ -1,0 +1,21 @@
+{
+  "name": "ts-es-modules-web",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "http-server & tsc -w",
+    "start": "http-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Marce Zapaia <marce@apx.school> (https://apx.school)",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "http-server": "^14.1.1",
+    "typescript": "^5.3.3"
+  }
+}
